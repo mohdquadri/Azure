@@ -34,8 +34,6 @@ function Connect-O365Services {
     Connect-AzureAD -TenantId "6b53e62a-045a-4207-9667-0f80bddbeaec" -Credential $Credentials
 
     # Microsoft teams Connect
-    Install-Module -Name MicrosoftTeams -Scope CurrentUser -Confirm $false
-    Import-Module MicrosoftTeams
     Connect-MicrosoftTeams
     Connect-AzAccount -Credential $Credentials -Force -Tenant "6b53e62a-045a-4207-9667-0f80bddbeaec"
   
