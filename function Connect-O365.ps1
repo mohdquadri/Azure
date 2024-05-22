@@ -21,7 +21,7 @@ function Connect-O365Services {
     Connect-ExchangeOnline -UserPrincipalName $UserPrincipalName -ShowProgress $true
 
     Write-Host "Connected to Office 365 as $UserPrincipalName"
-
+    write-host " "
     # Install AzureAD module if not already installed
     if (-not (Get-Module AzureAD -ListAvailable)) {
         Install-Module -Name AzureAD -Force -Scope CurrentUser
@@ -32,11 +32,12 @@ function Connect-O365Services {
 
     # Connect to Azure AD
     Connect-AzureAD -TenantId "6b53e62a-045a-4207-9667-0f80bddbeaec" -Credential $Credentials
-
+    Write-Host "Connected to Azure AD as $UserPrincipalName" -ForegroundColor green -BackgroundColor Red
     # Microsoft teams Connect
     Connect-MicrosoftTeams
     Connect-AzAccount -Credential $Credentials -Force -Tenant "6b53e62a-045a-4207-9667-0f80bddbeaec"
-  
+    Write-Host "Connected to Azure as $UserPrincipalName" -ForegroundColor green -BackgroundColor Red
+
 
     #Write-Host "Connected to Azure, Microsoft Defender, Microsoft Cloud App Security, and Microsoft Teams as $UserPrincipalName"
 }
