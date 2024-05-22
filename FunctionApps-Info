@@ -1,0 +1,5 @@
+$functionApp = Get-AzResource -ResourceGroupName businesscentraldllfiles -ResourceName OneStreamIntegration -ResourceType Microsoft.Web/sites 
+$functionApp.Properties.sku
+
+(Get-AzWebApp -ResourceGroup businesscentraldllfiles -name OneStreamIntegration).PossibleOutboundIpAddresses
+(Get-AzWebApp -ResourceGroup businesscentraldllfiles -name OneStreamIntegration).PossibleinboundIpAddresses
