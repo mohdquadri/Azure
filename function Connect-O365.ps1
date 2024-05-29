@@ -20,7 +20,7 @@ function Connect-O365Services {
     # Connect to Exchange Online
     Connect-ExchangeOnline -UserPrincipalName $UserPrincipalName -ShowProgress $true
 
-    Write-Host "Connected to Office 365 as $UserPrincipalName"
+    Write-Host "Connected to Office 365 as '$($credentials.username)'" -ForegroundColor green
     write-host " "
     # Install AzureAD module if not already installed
     if (-not (Get-Module AzureAD -ListAvailable)) {
@@ -31,12 +31,18 @@ function Connect-O365Services {
     Import-Module AzureAD -Force
 
     # Connect to Azure AD
+
+    Install-Module -Name AzureADPreview
+Import-Module AzureAD -UseWindowsPowerShell
+
+    Connect-AzureAD
     Connect-AzureAD -TenantId "6b53e62a-045a-4207-9667-0f80bddbeaec" -Credential $Credentials
-    Write-Host "Connected to Azure AD as $UserPrincipalName" -ForegroundColor green -BackgroundColor Red
+    Write-Host "Connected to Azure AD as '$($credentials.username)'" -ForegroundColor green
+
     # Microsoft teams Connect
     Connect-MicrosoftTeams
     Connect-AzAccount -Credential $Credentials -Force -Tenant "6b53e62a-045a-4207-9667-0f80bddbeaec"
-    Write-Host "Connected to Azure as $UserPrincipalName" -ForegroundColor green -BackgroundColor Red
+    Write-Host "Connected to Azure as '$($credentials.username)'" -ForegroundColor green
 
 
     #Write-Host "Connected to Azure, Microsoft Defender, Microsoft Cloud App Security, and Microsoft Teams as $UserPrincipalName"

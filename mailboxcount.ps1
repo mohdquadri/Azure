@@ -14,3 +14,4 @@
     write-host " "
 
     Get-mailbox -ResultSize unlimited | Measure-Object
+    get-mailbox -ResultSize unlimited | Get-MailboxStatistics | fl *totalitemsize*, displayname
