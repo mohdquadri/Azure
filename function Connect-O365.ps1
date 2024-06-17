@@ -20,14 +20,33 @@ function Connect-O365Services {
     # Connect to Exchange Online
     Connect-ExchangeOnline -UserPrincipalName $UserPrincipalName -ShowProgress $true
 
-    Write-Host "Connected to Office 365 as '$($credentials.username)'" -ForegroundColor green
-    write-host " "
-    
-    # Microsoft teams Connect
-    Connect-MicrosoftTeams
-    Connect-AzAccount -Credential $Credentials -Force -Tenant "6b53e62a-045a-4207-9667-0f80bddbeaec"
-    Write-Host "Connected to Teams as '$($credentials.username)'" -ForegroundColor green
+    Write-Host "Connected to Exchange online as $UserPrincipalName"
+    Write-Host " "
 
+    # Install AzureAD module if not already installed
+    if (-not (Get-Module AzureAD -ListAvailable)) {
+        Install-Module -Name AzureAD -Force -Scope CurrentUser
+    }
+
+    # Import AzureAD module
+    Import-Module AzureAD -Force
+
+    # Connect to Azure AD
+    Connect-AzureAD -TenantId "6b53e62a-045a-4207-9667-0f80bddbeaec" -Credential $Credentials
+    Write-Host "Connected to Azure AD as $UserPrincipalName" -ForegroundColor Green -BackgroundColor Red
+    Write-Host " "
+
+    # Microsoft teams Connect
+    
+    Import-Module MicrosoftTeams
+    
+    Connect-MicrosoftTeams
+    Write-Host "Connected to Teams as $UserPrincipalName" -ForegroundColor Green -BackgroundColor Red
+    Write-Host " "
+
+    Connect-AzAccount -Credential $Credentials -Force -Tenant "6b53e62a-045a-4207-9667-0f80bddbeaec" -ForegroundColor Green -BackgroundColor Red
+    Write-Host "Connected to Azure as $UserPrincipalName" -ForegroundColor Green -BackgroundColor Red
+    Write-Host " "
 
     #Write-Host "Connected to Azure, Microsoft Defender, Microsoft Cloud App Security, and Microsoft Teams as $UserPrincipalName"
 }
