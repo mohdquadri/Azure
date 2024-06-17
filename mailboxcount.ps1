@@ -15,3 +15,8 @@
 
     Get-mailbox -ResultSize unlimited | Measure-Object
     get-mailbox -ResultSize unlimited | Get-MailboxStatistics | fl *totalitemsize*, displayname
+
+
+    
+    #Azure CLI cmdlet to get the employees list from Azure portal
+    #Get-AzADUser -Filter "UserType eq 'Member'" | Where-Object { $_.UserPrincipalName -like "*@copart.com*" } | where {$_.userprincipalname -notlike "*kiosk*"} | Select-Object DisplayName, UserPrincipalName, UserType
