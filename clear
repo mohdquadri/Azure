@@ -1,0 +1,122 @@
+[33mcommit 4469691b41ad58a9017c5b0f97b780117dbc713e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: mohdquadri <mohdquadri@yahoo.com>
+Date:   Mon Jul 1 15:53:55 2024 -0500
+
+    adding text file 4
+
+[33mcommit eee2650851c7de4bcf6db9c6e058c74888e284cf[m
+Author: mohdquadri <mohdquadri@yahoo.com>
+Date:   Mon Jul 1 15:52:32 2024 -0500
+
+    adding text file 3
+
+[33mcommit 72e67bdbeb2dacb0ad23f55c42ff9611133a2e76[m
+Author: mohdquadri <ridvon@gmail.com>
+Date:   Mon Jul 1 15:48:58 2024 -0500
+
+    updating the test file 2
+
+[33mcommit 99d51bf73c13991fca6fc4aa370f46867232c05d[m
+Author: mohdquadri <ridvon@gmail.com>
+Date:   Mon Jul 1 15:44:29 2024 -0500
+
+    adding text file
+
+[33mcommit 94d3f5580fa1ffec4fbd918bf47716a210e8061d[m
+Author: mohdquadri <50426301+mohdquadri@users.noreply.github.com>
+Date:   Mon Jul 1 10:37:35 2024 -0500
+
+    hj
+    
+    hj
+
+[33mcommit 98beacd88ce47bec93fa728031d3ed0103d9485c[m
+Merge: 35aaeed 087928b
+Author: mohdquadri <50426301+mohdquadri@users.noreply.github.com>
+Date:   Mon Jun 17 11:08:01 2024 -0500
+
+    Merge branch 'main' of https://github.com/mohdquadri/Azure
+
+[33mcommit 35aaeed9d3c81a79ad172d7344ed5c5319862b4c[m
+Author: mohdquadri <50426301+mohdquadri@users.noreply.github.com>
+Date:   Mon Jun 17 11:07:59 2024 -0500
+
+    Update mailboxcount.ps1
+
+[33mcommit 087928b158a4c8e0513d5e917a2760cc300c2b56[m
+Author: mohdquadri <50426301+mohdquadri@users.noreply.github.com>
+Date:   Mon Jun 17 11:07:47 2024 -0500
+
+    kl
+
+[33mcommit c42106625dcaa398a100818363dca37dd93c7618[m
+Author: mohdquadri <50426301+mohdquadri@users.noreply.github.com>
+Date:   Mon Jun 3 10:38:33 2024 -0500
+
+    Update function Connect-O365.ps1
+
+[33mcommit 1de2ce14ca06f6aaa5f81d8eae928b5b511716d2[m
+Author: mohdquadri <50426301+mohdquadri@users.noreply.github.com>
+Date:   Wed May 29 16:51:43 2024 -0500
+
+    sdf
+
+[33mcommit 0a61f312e0f91108e847786921a5a6eeb9801e54[m
+Author: mohdquadri <50426301+mohdquadri@users.noreply.github.com>
+Date:   Wed May 29 10:46:35 2024 -0500
+
+    Create Test2.ps1.txt
+
+[33mcommit 5cb0b38badaee6f2ba191d3bfb0a304d08c926e0[m
+Author: mohdquadri <50426301+mohdquadri@users.noreply.github.com>
+Date:   Thu May 23 09:41:11 2024 -0500
+
+    Create mailboxcount.ps1
+
+[33mcommit fea1e0b8cd295a47c0d55d5c1e28e6444fda44b4[m
+Author: mohdquadri <50426301+mohdquadri@users.noreply.github.com>
+Date:   Wed May 22 17:08:19 2024 -0500
+
+    Update function Connect-O365.ps1
+
+[33mcommit 6f896c1283c6bfed80a7ca9f79d205f977a06a4e[m
+Merge: 43666d8 e27c742
+Author: mohdquadri <50426301+mohdquadri@users.noreply.github.com>
+Date:   Wed May 22 16:18:58 2024 -0500
+
+    Merge branch 'main' of https://github.com/mohdquadri/Azure
+
+[33mcommit 43666d81369b92d3ea4667e0f25d95d6860e486e[m
+Author: mohdquadri <50426301+mohdquadri@users.noreply.github.com>
+Date:   Wed May 22 16:17:58 2024 -0500
+
+    asdfasdf
+    
+    sdsdfadsf asd
+
+[33mcommit e27c7426ee7e57ecb1ff9a0ec73e41f111bc7139[m
+Merge: 4e3b65c 095f122
+Author: mohdquadri <50426301+mohdquadri@users.noreply.github.com>
+Date:   Wed May 22 15:54:05 2024 -0500
+
+    Merge pull request #1 from mohdquadri/mohdquadri-O365-1
+    
+    Add files via upload
+
+[33mcommit 095f1222184a54147ce23cfbe4f4339e05450ef5[m[33m ([m[1;31morigin/mohdquadri-O365-1[m[33m)[m
+Author: mohdquadri <50426301+mohdquadri@users.noreply.github.com>
+Date:   Wed May 22 15:28:12 2024 -0500
+
+    Add files via upload
+
+[33mcommit 4e3b65c8384ec424e9517415e603e9c02c8e4bdb[m
+Author: mohdquadri <50426301+mohdquadri@users.noreply.github.com>
+Date:   Wed May 22 15:27:28 2024 -0500
+
+    Add files via upload
+
+[33mcommit b09f205a859ad9830b4764d06decc98d08747777[m
+Author: mohdquadri <50426301+mohdquadri@users.noreply.github.com>
+Date:   Wed May 22 15:25:50 2024 -0500
+
+    Create FunctionApps-Info
